@@ -33,8 +33,8 @@ def login_view(request):
     return render(request, 'auth/login.html', {'form': form})
 
 
-def dashboard_view(requeset):
-    return render(requeset,'dashboard.html')
+def dashboard_view(request):
+    return render(request,'dashboard.html')
 
 def logout_view(request):
     logout(request)
